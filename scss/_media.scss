@@ -1,0 +1,219 @@
+@media (max-width: 1850px){
+   .footer{
+      .callback{
+         display: none;
+      }
+   }
+}
+@media (max-width: 1200px){
+   .footer__text{
+      display: none;
+   }
+   .footer__logo{
+      margin-right: auto;
+   }
+   .prod__inner{
+      flex-direction: column;
+      align-items: center;
+   }
+   .prod__item{
+      & + .prod__item{
+         margin-left: 0;
+         margin-top: 20px;
+     }
+   }
+   .banner__title{
+      padding-right: 20px;
+      padding-left: 20px;
+      text-align: center;
+   }
+   .callback{
+      right: 100px;
+   }
+   .burger{
+      display: block;
+   }
+   .header__menu-list{
+      position: absolute;
+      top: 0;
+      right: -100%;
+      height: 100vh;
+      width: 70%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: all .4s;
+      background-color: rgba(#1AB0CE, .8);
+      &.active{
+         right: 0;
+      }
+      .header__menu-item{
+         width: 100%;
+         text-align: center;
+         &:last-child{
+            display: none;
+         }
+         a{
+            padding-right: 0;
+         }
+      }
+      a{
+         color: #fff;
+         width: 100%;
+      }
+      .header__menu-item +.header__menu-item a{
+         border: none;
+         padding-left: 0;
+         padding-right: 0;
+      }
+      z-index: 7;
+   }
+   .header__menu{
+      background-color: #fff;
+      width: 100%;
+      height: 40px;
+   }
+   .header__own{
+      min-width: 130px;
+   }
+   .header__about{
+      margin-right: 20px;
+   }
+   .header__logo{
+      margin-right: 20px;
+   }
+}
+@media (max-width: 1100px){
+   .header__about{
+      display: none;
+   }
+   .header__logo{
+      margin-right: auto;
+   }
+}
+@media (max-width: 870px){
+   .footer__inner{
+      flex-direction: column;
+      align-items: center;
+   }
+   .footer__logo{
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
+   .footer__copy{
+      text-align: center;
+   }
+   .footer__list{
+      text-align: center;
+      margin-bottom: 20px;
+   }
+   .footer__list .footer__list-item{
+      width: 50%;
+      &:nth-child(even){
+         width: 50%;
+      }
+   }
+   .footer__contacts{
+      margin-left: 0;
+   }
+   .footer__contact-link,
+   .footer__contact-studio{
+      text-align: center;
+   }
+   .footer__contact-studio{
+      background-position: left center;
+   }
+}
+@media (max-width: 720px){
+   .news,
+   .about{
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+   .prod{
+      padding-top: 20px;
+   }
+   .news__inner{
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   .news__title{
+      margin-bottom: 20px;
+   }
+   .news__item{
+      & + .news__item{
+         margin-left: 0;
+         margin-top: 20px;
+      }
+   }
+   .callback{
+       display: none;
+   }
+   .title{
+      font-size: 30px;
+   }
+   .banner__title{
+      font-size: 47px;
+      line-height: 57px;
+   }
+   .header__inner{
+      flex-direction: column;
+      align-items: center;
+   }
+   .header__logo{
+      margin-right: 0;
+      margin-bottom: 20px;
+   }
+   .header__contacts{
+      margin: 0;
+      margin-bottom: 20px;
+   }
+   .header__own{
+      margin-bottom: 20px;
+   }
+   .header__contacts-link{
+      text-align: center;
+   }
+   .burger{
+      top: 20px;
+   }
+   .header__menu{
+      height: 0;
+   }
+}
+@media (max-width: 520px){
+   .banner__title {
+      font-size: 40px;
+      line-height: 50px;
+  }
+  .about__subtitle{
+     font-size: 20px;
+     line-height: 24px;
+  }
+  .prod__item{
+      padding: 20px 28px;
+      background-image: none;
+      &-2{
+         .prod__list{
+            .prod__list-item{
+               width: 50%;
+               &:nth-child(even){
+                  width: 50%;
+               }
+            }
+         }
+      }
+      .prod__item-title{
+         text-align: center;
+      }
+      .prod__list{
+         text-align: center;
+      }
+  }
+  .banner__subtitle{
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+  }
+}

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>PRINTE</title>
+</head>
+
+<body>
+
+
+    <div id="app">
+
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__inner">
+                        <a class="header__logo">
+                            <div class="header__logo-title">
+                                PRINTE
+                            </div>
+                            <div class="header__logo-subtitle">
+                                Ваша типография
+                            </div>
+                        </a>
+                        <div class="header__about">
+                            <div class="header__about-text">
+                                Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!
+                            </div>
+                            <div class="header__about-time">
+                                Работаем с 9 до 18, вс и сб выходные
+                            </div>
+                        </div>
+                        <div class="header__own">
+                            <a href="#" class="header__own-link">Личный кабинет</a>
+                        </div>
+                        <div class="header__contacts">
+                            <a href="#" class="header__contacts-link">maket@test-vertka.ua</a>
+                            <div class="header__contacts-bottom">
+                                <a href="#" class="header__contacts-facebook"></a>
+                                <div class="header__contacts-phone" @click="show($event)">
+                                    (044) 345-40-42
+                                </div>
+                                <ul class="header__dropdown-list">
+                                    <li class="header__dropdown-item"><a href="#"
+                                            class="header__dropdown-link header__dropdown-link-1">(099) 445-54-18</a>
+                                    </li>
+                                    <li class="header__dropdown-item"><a href="#"
+                                            class="header__dropdown-link header__dropdown-link-2">(096) 497-78-03</a>
+                                    </li>
+                                    <li class="header__dropdown-item"><a href="#"
+                                            class="header__dropdown-link header__dropdown-link-3">(063) 435-16-81</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a href="#" class="header__bag"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="burger" @click="openMenu($event)">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="12" viewBox="0 0 24 12"><g><g><path fill="#000" d="M11 5h12a1 1 0 1 1 0 2H11a1 1 0 1 1 0-2zM1 0h22a1 1 0 1 1 0 2H1a1 1 0 0 1 0-2zm0 10h22a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2z"/></g></g></svg>
+                </div>
+                <div class="container">
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="#">Главная</a></li>
+                            <li class="header__menu-item"><a href="#">Продукция</a></li>
+                            <li class="header__menu-item"><a href="#">Доставка и оплата</a></li>
+                            <li class="header__menu-item"><a href="#">Новости</a></li>
+                            <li class="header__menu-item"><a href="#">База знаний</a></li>
+                            <li class="header__menu-item"><a href="#">О нас</a></li>
+                            <li class="header__menu-item"><a href="#" class="add-border">Контакты</a></li>
+                            <li class="header__menu-item"><a href="#"><svg width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.5 16C12.6421 16 16 12.6421 16 8.5C16 4.35786 12.6421 1 8.5 1C4.35786 1 1 4.35786 1 8.5C1 12.6421 4.35786 16 8.5 16Z"
+                                            stroke="#3A4047" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M19 19L13.8 13.8" stroke="#3A4047" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner">
+            <h1 class="banner__title">
+                Оперативная печать полиграфии от 1 дня!
+            </h1>
+            <div class="banner__subtitle">
+                Доставка в любой город Украины
+            </div>
+            <button class="banner__btn">
+                Сделать заказ
+            </button>
+            <a href="#" class="callback">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.8881 15.9201V18.9201C20.8904 19.4832 20.6552 20.0213 20.2402 20.402C19.8252 20.7827 19.269 20.9708 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66195 16.3148 5.61346 14.2663 4.07812 11.8501C2.3881 9.2413 1.33637 6.27109 1.00812 3.1801C0.957597 2.62097 1.1444 2.06635 1.52289 1.65172C1.90138 1.23709 2.43672 1.00063 2.99812 1.0001H5.99812C7.00199 0.990218 7.85762 1.72607 7.99812 2.7201C8.12475 3.68016 8.35957 4.62283 8.69812 5.5301C8.97286 6.26097 8.79714 7.0849 8.24812 7.6401L6.97812 8.9101C8.40168 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.8033 13.0911 15.6272 12.9154 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C20.1737 14.032 20.9133 14.9049 20.8881 15.9201Z"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="callback__text">
+                    Перезвоните
+                    мне сейчас!
+                </div>
+            </a>
+        </section>
+        <section class="prod">
+            <div class="container">
+                <h3 class="prod__title title">Продукция</h3>
+                <div class="prod__inner">
+                    <div class="prod__item prod__item-1">
+                        <h4 class="prod__item-title">
+                            Офисная продукция
+                        </h4>
+                        <ul class="prod__list">
+                            <li class="prod__list-item">Визитки</li>
+                            <li class="prod__list-item">Конверты</li>
+                            <li class="prod__list-item">Папки</li>
+                            <li class="prod__list-item">Книги</li>
+                            <li class="prod__list-item">Блокноты</li>
+                            <li class="prod__list-item">Фирменные бланки</li>
+                        </ul>
+                    </div>
+                    <div class="prod__item prod__item-2">
+                        <h4 class="prod__item-title">
+                            Рекламная продукция
+                        </h4>
+                        <ul class="prod__list">
+                            <li class="prod__list-item">Листовки</li>
+                            <li class="prod__list-item">Плакаты</li>
+                            <li class="prod__list-item">Флаера</li>
+                            <li class="prod__list-item">Баннеры</li>
+                            <li class="prod__list-item">Буклеты</li>
+                            <li class="prod__list-item">Магниты</li>
+                            <li class="prod__list-item">Календари</li>
+                            <li class="prod__list-item">Наклейки</li>
+                            <li class="prod__list-item">Блокноты</li>
+                        </ul>
+                    </div>
+                    <div class="prod__item prod__item-3">
+                        <h4 class="prod__item-title">
+                            Для бизнеса
+                        </h4>
+                        <ul class="prod__list">
+                            <li class="prod__list-item">Каталоги</li>
+                            <li class="prod__list-item">Журналы</li>
+                            <li class="prod__list-item">Дисконтные карты</li>
+                            <li class="prod__list-item">Бейджи</li>
+                            <li class="prod__list-item">Гарантийные наклейки</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h3 class="about__title title">
+                    О нас
+                </h3>
+                <div class="about__subtitle">
+                    Оперативная печать полиграфии от 1 дня!
+                </div>
+                <p class="about__text">
+                    <span>Перед долгим заплывом намажьтесь солнцезащитным кремом. Вода не спасает от вредного излучения, оно проникает и на глубину 1 м.</span>
+                    Прежде чем отправиться на пляж, съешьте что-нибудь солененькое или выпейте чай с лимоном. Считается, что тем самым вы предотвратите потерю важных минеральных веществ, которые покидают тело вместе с потом, а загар при этом ляжет ровнее. Находясь на солнце, следует больше двигаться — плавать, делать гимнастику, играть в мяч и т.д. Лучше ходить босиком, чем в тапочках. Не рекомендуется покрывать ногти лаком, пусть они отдохнут и получат солнечные лучи и воздух.
+                </p>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <h3 class="news__title title">
+                    Новости
+                </h3>
+                <div class="news__inner">
+                    <a href="#" class="news__item">
+                        <div class="news__datetime">
+                            14 марта 2018
+                        </div>
+                        <div class="news__text">
+                            Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+                        </div>
+                    </a>
+                    <a href="#" class="news__item">
+                        <div class="news__datetime">
+                            14 марта 2018
+                        </div>
+                        <div class="news__text">
+                            Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+                        </div>
+                    </a>
+                    <a href="#" class="news__item">
+                        <div class="news__datetime">
+                            14 марта 2018
+                        </div>
+                        <div class="news__text">
+                            Оазисное земледелие поднимает культурный субэкваториальный климат, там же можно с палками
+                        </div>
+                    </a>
+                </div>
+                <button class="news__btn">Смотреть все новости</button>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__logo">
+                        <a class="header__logo">
+                            <div class="header__logo-title">
+                                PRINTE
+                            </div>
+                            <div class="header__logo-subtitle">
+                                Ваша типография
+                            </div>
+                        </a>
+                        <div class="footer__copy">
+                            2018 — Все права защищены
+                        </div>
+                    </div>
+                    <div class="footer__text">
+                        Качественная оперативная цифровая, широкоформатная и сувенирная полиграфия!
+                        <span>Работаем с 9 до 18, вс и сб выходные</span>
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="#">Главная</a></li>
+                        <li class="footer__list-item"><a href="#">Новости</a></li>
+                        <li class="footer__list-item"><a href="#">Продукция</a></li>
+                        <li class="footer__list-item"><a href="#">База знаний</a></li>
+                        <li class="footer__list-item"><a href="#">Доставка и оплата</a></li>
+                        <li class="footer__list-item"><a href="#">О нас</a></li>
+                    </ul>
+                    <div class="footer__contacts">
+                        <div class="header__contacts-bottom">
+                            <a href="#" class="header__contacts-facebook"></a>
+                            <div class="header__contacts-phone" @click="show($event)">
+                                (044) 345-40-42
+                            </div>
+                            <ul class="header__dropdown-list">
+                                <li class="header__dropdown-item"><a href="#"
+                                        class="header__dropdown-link header__dropdown-link-1">(099) 445-54-18</a>
+                                </li>
+                                <li class="header__dropdown-item"><a href="#"
+                                        class="header__dropdown-link header__dropdown-link-2">(096) 497-78-03</a>
+                                </li>
+                                <li class="header__dropdown-item"><a href="#"
+                                        class="header__dropdown-link header__dropdown-link-3">(063) 435-16-81</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="footer__contact-link">Контакты</a>
+                        <a href="#" class="footer__contact-studio">Глянец — Разработка сайтов</a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="callback">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20.8881 15.9201V18.9201C20.8904 19.4832 20.6552 20.0213 20.2402 20.402C19.8252 20.7827 19.269 20.9708 18.7081 20.9201C15.631 20.5857 12.6751 19.5342 10.0781 17.8501C7.66195 16.3148 5.61346 14.2663 4.07812 11.8501C2.3881 9.2413 1.33637 6.27109 1.00812 3.1801C0.957597 2.62097 1.1444 2.06635 1.52289 1.65172C1.90138 1.23709 2.43672 1.00063 2.99812 1.0001H5.99812C7.00199 0.990218 7.85762 1.72607 7.99812 2.7201C8.12475 3.68016 8.35957 4.62283 8.69812 5.5301C8.97286 6.26097 8.79714 7.0849 8.24812 7.6401L6.97812 8.9101C8.40168 11.4136 10.4746 13.4865 12.9781 14.9101L14.2481 13.6401C14.8033 13.0911 15.6272 12.9154 16.3581 13.1901C17.2654 13.5286 18.2081 13.7635 19.1681 13.8901C20.1737 14.032 20.9133 14.9049 20.8881 15.9201Z"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="callback__text">
+                    Перезвоните
+                    мне сейчас!
+                </div>
+            </a>
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
